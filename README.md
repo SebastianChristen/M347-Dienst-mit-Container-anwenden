@@ -15,3 +15,11 @@ DevOps steht für Development und Operations, also Entwicklung und Betrieb. DevO
 ## Unterschied Virtualisierung und Containerisierung
 Der Unterschied zwischen Virtualisierung und Containerisierung ist, wie sie mit der Hardware und dem Betriebssystem umgehen. Bei VMs wird das OS virtuell nachgebildet, was dazu führt, dass VMs ziemlich gross sind. Container benutzen deutlich weniger Ressourcen, da sie sich das Betriebssystem teilen. Deshalb sind Containers kleiner und effizienter. Docker läuft nur auf Linux, weil es stark vom Host-Betriebssystem abhängt.
 Zusammenfassend sind Containers viel leichter und auch schneller als VMs.
+
+## Unterschied Image und Container
+Container sind bewegend, wärend images ein statisches abbild eines systems zu einem gewissen zeitpunk ist. [TODO]
+
+## Zusammenfassung der Wichtigsten Befehle und ihre funktion (Diese wird laufend ergänzt)
+- **Befehl:** ls
+  **Ausführung:** gibt den Inhalt im Ordner aus
+
