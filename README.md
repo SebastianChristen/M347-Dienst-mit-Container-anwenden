@@ -20,6 +20,8 @@ Zusammenfassend sind Containers viel leichter und auch schneller als VMs.
 Container sind bewegend, wärend images ein statisches abbild eines systems zu einem gewissen zeitpunk ist. [TODO]
 
 ## Zusammenfassung der Wichtigsten Befehle und ihre funktion (Diese wird laufend ergänzt)
-- **Befehl:** ls
-  **Ausführung:** gibt den Inhalt im Ordner aus
+| Befehl | Ausführung               |
+| ------ | ------------------------ |
+| ls     | gibt den Inhalt im Ordner aus |
+
 
