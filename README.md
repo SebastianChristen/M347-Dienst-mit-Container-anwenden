@@ -22,9 +22,12 @@ Container sind bewegend, wärend images ein statisches abbild eines systems zu e
 | ------------------------------------- | ------------------ |
 | `ls`                                    | gibt den Inhalt im Ordner aus |
 | `docker tag <ersterName> <zweiterName>` | Umbenennen        |
+| `docker login` | sich einloggen |
+| `docker pull <imageName>`| ladet das Image imageName herunter |
+| `docker images -a` | zeige alle images an |
+ [TODO]
 
 
-Durch das Einbetten des Docker-Befehls in Grave-Akzente (\`) wird dieser als Code formatiert und in Ihrer Tabelle richtig dargestellt.
 
 ## Onlyoffice
 ![](onlyoffice.png)
