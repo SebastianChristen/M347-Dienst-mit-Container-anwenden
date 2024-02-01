@@ -12,3 +12,6 @@ Ein Container kann man sich am besten so vorstellen, dass er wie eine vereinfach
 
 ## Was ist DevOps?
 DevOps steht für Development und Operations, also Entwicklung und Betrieb. DevOps ist etwa im Jahr 2007 entstanden, aus dem Grund das Entwickler und IT-Experten besorgt darüber waren, wie traditionelle Softwareentwicklung und IT-Betrieb getrennt voneinander abliefen. DevOps ermöglicht es, die Zusammenarbeit zwischen Entwicklern und IT-Teams zu verbessern und Prozesse zu automatisieren. Ein DevOps-Team besteht aus Entwicklern und IT-Experten, die solange zusammenarbeiten, solange die Entwickelte Applikation verwendet wird.
+
+## Unterschied Virtualisierung und Containerisierung
+Der Unterschied zwischen Virtualisierung und Containerisierung ist, dass bei einer VM die gesammte Hardware auch virtuallisiert wird, und daher sind VM recht gross, wärend in Containern viel weniger ist, und sie sich das betriebssystem teilen. Deshalb sind Containers kleiner.
