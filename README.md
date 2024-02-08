@@ -25,6 +25,59 @@ Container sind bewegend, wärend images ein statisches abbild eines systems zu e
 | `docker login` | sich einloggen |
 | `docker pull <imageName>`| ladet das Image imageName herunter |
 | `docker images -a` | zeige alle images an |
+#Hier eine Zusammenfassung der bis jetzt eingesetzten Befehle. 
+docker run --name some-nginx -d -p 8080:80 nginx  #erzeugt einen neuen Container im Hintergrund und verbindet die Ports
+docker run --name some-nginx -d --rm -p 8080:80 nginx #erzeugt einen neuen Container und löscht diesen nach beenden gleich wieder
+docker stop some-nginx  # Stopt ein Container durch herunterfahren
+docker kill some-nginx  # Killt ein Container 
+docker rm some-ngnix # löscht ein Container vom System
+docker start some-nginx   #startet ein bestehender Container
+docker ps -a # Zeigt mir welche Container auf dem System vorhanden sind. 
+docker images # Zeigt mir welche Images auf dem System vorhanden sind.
+docker kill some-nginx  # Killt ein Container 
+docker rm some-ngnix # löscht ein Container vom System
+docker rmi ngnix # löscht ein Image vom System
+docker system prune -a --volumes  #Löscht alle Conatiner, Images, Volumes vom System. 
+Delete a container (if it is not running):
+
+docker rm [CONTAINER]
+
+Update the configuration of one or more containers:
+
+docker update [CONTAINER]
+
+Start a container:
+
+docker start [CONTAINER]
+
+Stop a running container:
+
+docker stop [CONTAINER]
+
+Stop a running container and start it up again:
+
+docker restart [CONTAINER]
+
+Pause processes in a running container:
+
+docker pause [CONTAINER]
+
+Unpause processes in a running container:
+
+docker unpause [CONTAINER]
+
+Block a container until others stop (after which it prints their exit codes):
+
+docker wait [CONTAINER]
+
+Kill a container by sending a SIGKILL to a running container:
+
+docker kill [CONTAINER]
+
+Attach local standard input, output, and error streams to a running container:
+
+docker attach [CONTAINER]
+
  [TODO]
 
 
