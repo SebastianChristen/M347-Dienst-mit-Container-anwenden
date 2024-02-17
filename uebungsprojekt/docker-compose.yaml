@@ -1,7 +1,6 @@
-version: "1"
+version: "3"
 services:
   okon-website:
     image: git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1
     ports:
      - "80"
-     
