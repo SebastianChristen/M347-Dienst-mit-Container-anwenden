@@ -112,3 +112,42 @@ Screenshot der Images auf git:
 
 ![](./docker-v2-git.png)
 
+## Docker Compose
+Docker Compose ist ein Tool, welches von Docker entwickelt wurde und dazu da ist, die Verwaltung von Docker containern zu vereinfachen. Mit docker compose kann man Image-Erstellung, Container-Starts und -Stops, das Beachten von Reihenfolgen, Links, Ports und Umgebungsvariablen automatisieren. Docker Compose verwendet eine YAML-Datei, in der die Konfiguration von den Container-Anwendung festgelegt wird. Mit einem einzigen Befehl kann man alle Dienste nach dieser Konfiguration erstellen und starten. Es erleichtert die Verwaltung von Docker-Anwendungen und automatisiert komplexe Abläufe.
+
+## Vorgehen, Befehle und Compose Datei
+
+sudo apt update
+sudo apt install docker-compose
+[TODO]
+
+## Portainer
+
+Portainer screenshot:
+
+![](./portainer.png)
+
+### Vorgehen Portainer
+
+I. Portainer gestartet
+
+II. Beim "local" Environment auf "Live Connect" gedrückt
+
+III. Bei "Stack" auf "add stack" gedrückt
+
+IV. eingefügt: ![](./portainer-screenshot.png)
+
+V. Auf "Deploy stack" gedrückt
+
+VI. Dann sieht man die Container: ![](./portainer-screenshot-working.png)
+
+## Shop
+
+zuerst habe ich ``sudo nano /etc/hosts`` gemacht, dann auf der untersten zeile 127.0.0.1    host.docker.internal hinzugefügt
+``git clone https://git.gibb.ch/thomas.staub/microservices`` ausgeführt, um es herunterzuladen
+in den ordner gehen: ``cd microservices/Play.Infra/docker``
+``docker-compose -f docker-compose.yaml up -d`` ausführen und ein kehrchen warten, bis es fertig ist
+dann im browser auf http://host.docker.internal:5008/ gehen
+
+
+
