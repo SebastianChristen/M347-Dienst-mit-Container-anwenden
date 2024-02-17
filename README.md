@@ -160,11 +160,11 @@ Die andere datei ist das docker-compose-file. im docker-compose wird das image g
 
 laden sie dieses github-repo herunter mit dem befehl
 
-``git clone https://github.com/Sebastianpkmn/M347-Dienst-mit-Container-anwenden.git``
+``git clone https://github.com/Sebastianpkmn/M347-Dienst-mit-Container-anwenden.git
 
-dann wechseln sie in den "uebungsprojekt"-order mit ``cd ./M347-Dienst-mit-Container-anwenden/uebungsprojekt``
+cd ./M347-Dienst-mit-Container-anwenden/uebungsprojekt
 
-danach führen sie den befehl hier aus: ```docker-compose -f ./docker-compose.yaml up -d```
+docker-compose -f ./docker-compose.yaml up -d```
 
 
 
