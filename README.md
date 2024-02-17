@@ -151,3 +151,20 @@ dann im browser auf http://host.docker.internal:5008/ gehen
 
 
 
+## Eigenes Projekt
+
+Im Ordner "uebungsprojekt" befinden sich zwei dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet.
+Die andere datei ist das docker-compose-file. im docker-compose wird das image gepullt, und ein container wird erstellt.
+
+### Wie man das Projekt installiert wird
+
+laden sie dieses github-repo herunter mit dem befehl
+
+``git clone https://github.com/Sebastianpkmn/M347-Dienst-mit-Container-anwenden.git``
+
+dann wechseln sie in den "uebungsprojekt"-order mit ``cd ./M347-Dienst-mit-Container-anwenden/uebungsprojekt``
+
+danach führen sie den befehl hier aus: ```docker-compose -f ./docker-compose.yaml up -d```
+
+
+
