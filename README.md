@@ -158,13 +158,16 @@ Die andere datei ist das docker-compose-file. im docker-compose wird das image g
 
 ### Wie man das Projekt installiert wird
 
-laden sie dieses github-repo herunter mit dem befehl
+laden sie dieses github-repo herunter mit diesen befehlen:
 
-``git clone https://github.com/Sebastianpkmn/M347-Dienst-mit-Container-anwenden.git
-
+```
+git clone https://github.com/Sebastianpkmn/M347-Dienst-mit-Container-anwenden.git
 cd ./M347-Dienst-mit-Container-anwenden/uebungsprojekt
+docker-compose -f ./docker-compose.yaml up -d
+```
 
-docker-compose -f ./docker-compose.yaml up -d```
+danach sollten sie auf docker desktop folgendes sehen. Sie können nun auf den Link bei "ports" klicken: 
 
+![](./okon-on-docker.png)
 
 
