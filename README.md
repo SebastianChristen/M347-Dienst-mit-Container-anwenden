@@ -63,7 +63,7 @@ sudo apt install docker-compose
 
 ## Portainer
 
-Portainer screenshot:
+Portainer Screenshot:
 
 ![](./portainer.png)
 
@@ -72,37 +72,33 @@ Portainer screenshot:
 I. Portainer gestartet
 II. Beim "local" Environment auf "Live Connect" gedrückt
 III. Bei "Stack" auf "add stack" gedrückt
-IV. eingefügt: ![](./portainer-screenshot.png)
+IV. Eingefügt: ![](./portainer-screenshot.png)
 V. Auf "Deploy stack" gedrückt
-
 VI. Dann sieht man die Container: ![](./portainer-screenshot-working.png)
 
 ## Shop
 
-zuerst habe ich ``sudo nano /etc/hosts`` gemacht, dann auf der untersten zeile 127.0.0.1    host.docker.internal hinzugefügt
-``git clone https://git.gibb.ch/thomas.staub/microservices`` ausgeführt, um es herunterzuladen
-in den ordner gehen: ``cd microservices/Play.Infra/docker``
-``docker-compose -f docker-compose.yaml up -d`` ausführen und ein kehrchen warten, bis es fertig ist
-dann im browser auf http://host.docker.internal:5008/ gehen
-
-
+Zuerst habe ich `sudo nano /etc/hosts` gemacht, dann auf der untersten Zeile `127.0.0.1    host.docker.internal` hinzugefügt.
+`git clone https://git.gibb.ch/thomas.staub/microservices` ausgeführt, um es herunterzuladen.  
+In den Ordner gehen: `cd microservices/Play.Infra/docker`  
+`docker-compose -f docker-compose.yaml up -d` ausführen und einen Moment warten, bis es fertig ist.  
+Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 ## Eigenes Projekt
 
-Im Ordner "uebungsprojekt" befinden sich zwei dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet.
-Die andere datei ist das docker-compose-file. im docker-compose wird das image gepullt, und ein container wird erstellt.
+Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das docker-compose-File. Im docker-compose wird das Image gepullt, und ein Container wird erstellt.
 
 ### Wie man das Projekt installiert wird
 
-laden sie dieses github-repo herunter mit diesen befehlen:
+Laden Sie dieses GitHub-Repo herunter mit diesen Befehlen:
 
-```
+```bash
 git clone https://github.com/Sebastianpkmn/M347-Dienst-mit-Container-anwenden.git
 cd ./M347-Dienst-mit-Container-anwenden/uebungsprojekt
 docker-compose -f ./docker-compose.yaml up -d
 ```
 
-danach sollten sie auf docker desktop folgendes sehen. Sie können nun auf den Link bei "ports" klicken: 
+Danach sollten Sie auf Docker Desktop folgendes sehen. Sie können nun auf den Link bei "ports" klicken:
 
 ![](./okon-on-docker.png)
 
