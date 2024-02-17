@@ -84,3 +84,31 @@ docker attach [CONTAINER]
 
 ## Onlyoffice
 ![](onlyoffice.png)
+
+##  Todo-app V1
+
+Screenshot des Frontend für Version 1:
+
+![](todo_task.png)
+
+Screenshot der Images auf git:
+
+![](docker_images_git.png)
+
+## Aufgabe 1 bei "Ein Image Pushen", Befehle
+
+```docker login``` --> einloggen
+``docker image tag todo-app:v1 git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1`` --> das image umbenennen
+``docker push git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1``  --> das image hochladen
+
+
+##  Todo-app V2
+
+Screenshot des Frontend für Version 2:
+
+![](./todo-app-v2.png)
+
+Screenshot der Images auf git:
+
+![](./docker-v2-git.png)
+
