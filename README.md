@@ -22,7 +22,7 @@ Container sind beweglich, während Images ein statisches Abbild eines Systems zu
 | `ls`                                  | gibt den Inhalt im Ordner aus |
 | `docker tag <ersterName> <zweiterName>` | Umbenennen                  |
 | `docker login`                        | sich einloggen               |
-| `docker pull <imageName>`              | lädt das Image imageName herunter |
+| `docker pull <imageName>`             | lädt das Image imageName herunter |
 | `docker images -a`                    | zeigt alle Images an         |
 
 ## Onlyoffice
@@ -76,7 +76,9 @@ II. Beim "local" Environment auf "Live Connect" gedrückt
 
 III. Bei "Stack" auf "add stack" gedrückt
 
-IV. Eingefügt: ![](./portainer-screenshot.png)
+IV. Dann habe ich diesen Code hier eingefügt:
+
+![](./portainer-screenshot.png)
 
 V. Auf "Deploy stack" gedrückt
 
