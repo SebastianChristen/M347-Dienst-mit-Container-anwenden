@@ -24,7 +24,8 @@ Container sind beweglich, während Images ein statisches Abbild eines Systems zu
 | `docker login`                        | sich einloggen               |
 | `docker pull <imageName>`              | lädt das Image imageName herunter |
 | `docker images -a`                    | zeigt alle Images an         |
-# Onlyoffice
+
+## Onlyoffice
 ![](onlyoffice.png)
 
 ##  Todo-app V1
@@ -43,14 +44,14 @@ docker image tag todo-app:v1 git-registry.gibb.ch/sch140456/dockermodul/todo-app
 docker push git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1  # Das Image hochladen
 ```
 
-# Todo-app V2
+## Todo-app V2
 Screenshot des Frontends für Version 2:
 ![Todo-app V2](./todo-app-v2.png)
 
 Screenshot der Images auf Git:
 ![](./docker-v2-git.png)
 
-# Docker Compose
+## Docker Compose
 Docker Compose ist ein Tool, welches von Docker entwickelt wurde und dazu da ist, die Verwaltung von Docker-Containern zu vereinfachen. Mit Docker Compose kann man Image-Erstellung, Container-Starts und -Stops, das Beachten von Reihenfolgen, Links, Ports und Umgebungsvariablen automatisieren. Docker Compose verwendet eine YAML-Datei, in der die Konfiguration von der Container-Anwendung festgelegt wird. Mit einem einzigen Befehl kann man alle Dienste nach dieser Konfiguration erstellen und starten. Es erleichtert die Verwaltung von Docker-Anwendungen und automatisiert komplexe Abläufe.
 
 ## Vorgehen, Befehle und Compose Datei
@@ -70,19 +71,30 @@ Portainer Screenshot:
 ### Vorgehen Portainer
 
 I. Portainer gestartet
+
 II. Beim "local" Environment auf "Live Connect" gedrückt
+
 III. Bei "Stack" auf "add stack" gedrückt
+
 IV. Eingefügt: ![](./portainer-screenshot.png)
+
 V. Auf "Deploy stack" gedrückt
+
 VI. Dann sieht man die Container: ![](./portainer-screenshot-working.png)
 
 ## Shop
 
-Zuerst habe ich `sudo nano /etc/hosts` gemacht, dann auf der untersten Zeile `127.0.0.1    host.docker.internal` hinzugefügt.
-`git clone https://git.gibb.ch/thomas.staub/microservices` ausgeführt, um es herunterzuladen.  
-In den Ordner gehen: `cd microservices/Play.Infra/docker`  
-`docker-compose -f docker-compose.yaml up -d` ausführen und einen Moment warten, bis es fertig ist.  
-Dann im Browser auf http://host.docker.internal:5008/ gehen.
+I. Zuerst habe ich `sudo nano /etc/hosts` ausgeführt, um die Datei zu öffen.
+
+II. Dann auf der untersten Zeile `127.0.0.1    host.docker.internal` hinzugefügt.
+
+III. Schliesslich habe ich `git clone https://git.gibb.ch/thomas.staub/microservices` ausgeführt, um es herunterzuladen.  
+
+IV. In den Ordner gehen: `cd microservices/Play.Infra/docker`.
+
+V. `docker-compose -f docker-compose.yaml up -d` ausführen und einen Moment warten, bis es fertig ist.  
+
+VI. Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 ## Eigenes Projekt
 
