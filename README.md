@@ -14,7 +14,7 @@ DevOps steht für Development und Operations, also Entwicklung und Betrieb. DevO
 
 ## Unterschied Virtualisierung und Containerisierung
 
-Der Unterschied zwischen Virtualisierung und Containerisierung ist, wie sie mit der Hardware und dem Betriebssystem umgehen. Bei VMs wird das OS virtuell nachgebildet, was dazu führt, dass VMs ziemlich groß sind. Container benutzen deutlich weniger Ressourcen, da sie sich das Betriebssystem teilen. Deshalb sind Container kleiner und effizienter. Docker läuft nur auf Linux, weil es stark vom Host-Betriebssystem abhängt. Zusammenfassend sind Container viel leichter und auch schneller als VMs.
+Der Unterschied zwischen Virtualisierung und Containerisierung ist, wie sie mit der Hardware und dem Betriebssystem umgehen. Bei VMs wird das OS virtuell nachgebildet, was dazu führt, dass VMs ziemlich groß sind. Container benutzen deutlich weniger Ressourcen, da sie sich das Betriebssystem teilen. Deshalb sind Container kleiner und effizienter. Docker läuft nur auf Linux, weil es stark vom Host-Betriebssystem abhängt. Auf Windows benötigt es Windows Subsystem für Linux. Zusammenfassend sind Container viel leichter und auch schneller als VMs.
 
 ## Unterschied Image und Container
 
@@ -65,10 +65,9 @@ Screenshot der Images auf Git:
 
 Docker Compose ist ein Tool, welches von Docker entwickelt wurde und dazu da ist, die Verwaltung von Docker-Containern zu vereinfachen. Mit Docker Compose kann man Image-Erstellung, Container-Starts und -Stops, das Beachten von Reihenfolgen, Links, Ports und Umgebungsvariablen automatisieren. Docker Compose verwendet eine YAML-Datei, in der die Konfiguration von der Container-Anwendung festgelegt wird. Mit einem einzigen Befehl kann man alle Dienste nach dieser Konfiguration erstellen und starten. Es erleichtert die Verwaltung von Docker-Anwendungen und automatisiert komplexe Abläufe.
 
-## Vorgehen, Befehle und Compose Datei
+### Vorgehen, Befehle und Compose-Datei
 
 ```bash
-
 sudo apt update
 sudo apt install docker-compose
 [TODO]
@@ -114,7 +113,7 @@ VI. Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das docker-compose-File. Im docker-compose wird das Image gepullt, und ein Container wird erstellt.
 
-### Wie man das Projekt installiert wird
+### Wie man das Projekt installiert
 
 Laden Sie dieses GitHub-Repo herunter mit diesen Befehlen:
 
