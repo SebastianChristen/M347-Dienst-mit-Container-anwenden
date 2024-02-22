@@ -48,7 +48,7 @@ Screenshot der Images auf Git:
 ## Aufgabe 1 bei "Ein Image Pushen", Befehle
 
 ```bash
-docker login  # Einloggen
+docker login git-registry.gibb.ch  # Einloggen
 docker image tag todo-app:v1 git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1  # Das Image umbenennen
 docker push git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1  # Das Image hochladen
 ```
