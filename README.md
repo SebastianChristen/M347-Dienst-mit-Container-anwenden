@@ -76,7 +76,28 @@ Docker Compose ist ein Tool, welches von Docker entwickelt wurde und dazu da ist
 ```bash
 sudo apt update
 sudo apt install docker-compose
-[TODO]
+nano docker-compose.yaml  # Die Datei erstellen, danach folgendes eingefügt:
+
+    version: "3"
+    services:
+      todoapp:
+        image: git-registry.gibb.ch/sch140456/dockermodul/todo-app:v2
+        ports:
+         - "3000"
+        depends_on:
+         - redis-master
+         - redis-slave
+      redis-slave:
+        image: git-registry.gibb.ch/sch140456/dockermodul/redis-slave:v1
+        depends_on:
+         - redis-master
+      redis-master:
+        image: git-registry.gibb.ch/sch140456/dockermodul/redis-master:v1
+
+
+# zum Schluss noch...
+docker-compose -f docker-compose.yaml up -d 
+
 ```
 
 ## Portainer
