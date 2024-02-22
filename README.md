@@ -140,6 +140,8 @@ VI. Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das docker-compose-File. Im docker-compose wird das Image gepullt, und ein Container wird erstellt.
 
+[TODO: ADD IMAGE]
+
 ### Wie man das Projekt installiert
 
 Laden Sie dieses GitHub-Repo herunter mit diesen Befehlen:
