@@ -1,7 +1,7 @@
 # Portfolio "Dienst mit Container anwenden"
 
 Sebastian Christen, INF2022j
-2024/02/01, Version Alpha00
+2024/02/22, Version Gamma02
 ![](https://oneclick-cloud.com/wp-content/uploads/2023/08/Bigstock_-139961875-Docker-Emblem.-A-Blue-Whale-With-Several-Containers.-e1574090673987-1.jpg)
 
 ## Was sind Container?
@@ -10,11 +10,11 @@ Ein Container kann man sich am besten so vorstellen, dass er wie eine vereinfach
 
 ## Was ist DevOps?
 
-DevOps steht für Development und Operations, also Entwicklung und Betrieb. DevOps ist etwa im Jahr 2007 entstanden, aus dem Grund, dass Entwickler und IT-Experten besorgt darüber waren, wie traditionelle Softwareentwicklung und IT-Betrieb getrennt voneinander abliefen. DevOps ermöglicht es, die Zusammenarbeit zwischen Entwicklern und IT-Teams zu verbessern und Prozesse zu automatisieren. Ein DevOps-Team besteht aus Entwicklern und IT-Experten, die solange zusammenarbeiten, solange die entwickelte Applikation verwendet wird.
+DevOps steht für Development und Operations, also Entwicklung und Betrieb. DevOps ist etwa im Jahr 2007 entstanden, aus dem Grund, dass Entwickler und IT-Experten besorgt darüber waren, wie traditionelle Softwareentwicklung und IT-Betrieb getrennt voneinander abliefen. DevOps ermöglicht es, die Zusammenarbeit zwischen Entwicklern und IT-Teams zu verbessern und Prozesse zu automatisieren. Ein DevOps-Team besteht aus Entwicklern und IT-Experten, die so lange zusammenarbeiten, solange die entwickelte Applikation verwendet wird.
 
 ## Unterschied Virtualisierung und Containerisierung
 
-Der Unterschied zwischen Virtualisierung und Containerisierung ist, wie sie mit der Hardware und dem Betriebssystem umgehen. Bei VMs wird das OS virtuell nachgebildet, was dazu führt, dass VMs ziemlich groß sind. Container benutzen deutlich weniger Ressourcen, da sie sich das Betriebssystem teilen. Deshalb sind Container kleiner und effizienter. Docker läuft nur auf Linux, weil es stark vom Host-Betriebssystem abhängt. Auf Windows benötigt es Windows Subsystem für Linux. Zusammenfassend sind Container viel leichter und auch schneller als VMs.
+Der Unterschied zwischen Virtualisierung und Containerisierung ist, wie sie mit der Hardware und dem Betriebssystem umgehen. Bei VMs wird das OS virtuell nachgebildet, was dazu führt, dass VMs ziemlich gross sind. Container benutzen deutlich weniger Ressourcen, da sie sich das Betriebssystem teilen. Deshalb sind Container kleiner und effizienter. Docker läuft nur auf Linux, weil es stark vom Host-Betriebssystem abhängt. Auf Windows benötigt es Windows Subsystem für Linux. Zusammenfassend sind Container viel leichter und auch schneller als VMs.
 
 ## Unterschied Image und Container
 
@@ -22,15 +22,15 @@ Container sind wie lauffähige Kopien von Docker-Images. Ein Docker-Image ist wi
 
 ## Zusammenfassung der wichtigsten Befehle und ihre Funktion (Diese wird laufend ergänzt)
 
-| Befehl                                        | Funktion                                    |
-| --------------------------------------------- | ------------------------------------------- |
-| `docker image tag <ersterName> <zweiterName>` | Umbenennen                                  |
-| `docker login`                                | sich einloggen                              |
-| `docker images -a`                            | zeigt alle Images an                        |
-| `docker pull <imageName>`                     | lädt das Image imageName herunter           |
-| `docker push <tag>`                           | lädt ein image hoch                         |
-| `docker-compose -f docker-compose.yaml up -d` | lädt die compose datei                      |
-| `docker system prune --all`                   | löscht nicht benutze container, images etc. |
+| Befehl                                        | Funktion                                   |
+| --------------------------------------------- | ------------------------------------------ |
+| `docker image tag <ersterName> <zweiterName>` | Umbenennen                                 |
+| `docker login`                                | sich einloggen                             |
+| `docker images -a`                            | zeigt alle Images an                       |
+| `docker pull <imageName>`                     | lädt das Image imageName herunter          |
+| `docker push <tag>`                           | lädt ein Image hoch                        |
+| `docker-compose -f docker-compose.yaml up -d` | lädt die Compose-Datei                     |
+| `docker system prune --all`                   | löscht nichtbenutze Container, Images etc. |
 
 ## Onlyoffice
 
@@ -96,7 +96,7 @@ nano docker-compose.yaml  # Die Datei erstellen, danach folgendes eingefügt:
 
 
 # zum Schluss noch...
-docker-compose -f docker-compose.yaml up -d 
+docker-compose -f docker-compose.yaml up -d
 
 ```
 
@@ -124,7 +124,7 @@ VI. Dann sieht man die Container: ![](./images/portainer-screenshot-working.png)
 
 ## Shop
 
-I. Zuerst habe ich `sudo nano /etc/hosts` ausgeführt, um die Datei zu öffen.
+I. Zuerst habe ich `sudo nano /etc/hosts` ausgeführt, um die Datei zu öffnen.
 
 II. Dann auf der untersten Zeile `127.0.0.1    host.docker.internal` hinzugefügt.
 
@@ -138,7 +138,7 @@ VI. Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 ## Eigenes Projekt
 
-Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das docker-compose-File. Im docker-compose wird das Image gepullt, und ein Container wird erstellt.
+Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das Docker-Compose-File. Im Docker-Compose wird das Image gepullt, und ein Container wird erstellt.
 
 ![](./images/okon-image-git.png)
 
