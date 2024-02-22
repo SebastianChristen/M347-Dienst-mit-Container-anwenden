@@ -51,6 +51,12 @@ Screenshot der Images auf Git:
 docker login git-registry.gibb.ch  # Einloggen
 docker image tag todo-app:v1 git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1  # Das Image umbenennen
 docker push git-registry.gibb.ch/sch140456/dockermodul/todo-app:v1  # Das Image hochladen
+
+docker image tag redis-slave:v1 git-registry.gibb.ch/sch140456/dockermodul/redis-slave:v1  # Das Image umbenennen
+docker push git-registry.gibb.ch/sch140456/dockermodul/redis-slave:v1  # Das Image hochladen
+
+docker image tag redis-master:v1 git-registry.gibb.ch/sch140456/dockermodul/redis-master:v1  # Das Image umbenennen
+docker push git-registry.gibb.ch/sch140456/dockermodul/redis-master:v1  # Das Image hochladen
 ```
 
 ## Todo-app V2
