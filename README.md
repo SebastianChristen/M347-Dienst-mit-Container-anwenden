@@ -140,7 +140,7 @@ VI. Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das docker-compose-File. Im docker-compose wird das Image gepullt, und ein Container wird erstellt.
 
-[TODO: ADD IMAGE]
+![](./okon-image-git.png)
 
 ### Wie man das Projekt installiert
 
@@ -152,6 +152,6 @@ cd ./M347-Dienst-mit-Container-anwenden/uebungsprojekt
 docker-compose -f ./docker-compose.yaml up -d
 ```
 
-Danach sollten Sie auf Docker Desktop folgendes sehen. Sie können nun auf den Link bei "ports" klicken:
+Danach sollten Sie auf Docker Desktop folgendes sehen. Sie können nun auf den Link bei "Ports" klicken:
 
 ![](./okon-on-docker.png)
