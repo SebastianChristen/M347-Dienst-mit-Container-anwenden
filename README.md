@@ -34,16 +34,16 @@ Container sind wie lauffähige Kopien von Docker-Images. Ein Docker-Image ist wi
 
 ## Onlyoffice
 
-![](onlyoffice.png)
+![](./images/onlyoffice.png)
 
 ## Todo-app V1
 
 Screenshot des Frontends für Version 1:
 
-![](todo_task.png)
+![](./images/todo_task.png)
 
 Screenshot der Images auf Git:
-![](docker_images_git.png)
+![](./images/docker_images_git.png)
 
 ## Aufgabe 1 bei "Ein Image Pushen", Befehle
 
@@ -62,10 +62,10 @@ docker push git-registry.gibb.ch/sch140456/dockermodul/redis-master:v1  # Das Im
 ## Todo-app V2
 
 Screenshot des Frontends für Version 2:
-![Todo-app V2](./todo-app-v2.png)
+![Todo-app V2](./images/todo-app-v2.png)
 
 Screenshot der Images auf Git:
-![](./docker-v2-git.png)
+![](./images/docker-v2-git.png)
 
 ## Docker Compose
 
@@ -104,7 +104,7 @@ docker-compose -f docker-compose.yaml up -d
 
 Portainer Screenshot:
 
-![](./portainer.png)
+![](./images/portainer.png)
 
 ### Vorgehen Portainer
 
@@ -116,11 +116,11 @@ III. Bei "Stack" auf "add stack" gedrückt
 
 IV. Dann habe ich diesen Code hier eingefügt:
 
-![](./portainer-screenshot.png)
+![](./images/portainer-screenshot.png)
 
 V. Auf "Deploy stack" gedrückt
 
-VI. Dann sieht man die Container: ![](./portainer-screenshot-working.png)
+VI. Dann sieht man die Container: ![](./images/portainer-screenshot-working.png)
 
 ## Shop
 
@@ -140,7 +140,7 @@ VI. Dann im Browser auf http://host.docker.internal:5008/ gehen.
 
 Im Ordner "uebungsprojekt" befinden sich zwei Dateien: das Dockerfile, welches verwendet wurde, um das Image zu erstellen, welches sich nun auf git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1 befindet. Die andere Datei ist das docker-compose-File. Im docker-compose wird das Image gepullt, und ein Container wird erstellt.
 
-![](./okon-image-git.png)
+![](./images/okon-image-git.png)
 
 ### Wie man das Projekt installiert
 
@@ -154,4 +154,4 @@ docker-compose -f ./docker-compose.yaml up -d
 
 Danach sollten Sie auf Docker Desktop folgendes sehen. Sie können nun auf den Link bei "Ports" klicken:
 
-![](./okon-on-docker.png)
+![](./images/okon-on-docker.png)
