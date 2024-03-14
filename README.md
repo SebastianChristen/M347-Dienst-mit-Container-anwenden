@@ -155,3 +155,65 @@ docker-compose -f ./docker-compose.yaml up -d
 Danach sollten Sie auf Docker Desktop folgendes sehen. Sie können nun auf den Link bei "Ports" klicken:
 
 ![](./images/okon-on-docker.png)
+
+# Kubernetes
+
+## Was ist Kubernetes?
+
+Kubernetes ist Orchestrator für die sogenannten Microservices. Es gehört zu einem grossen Bereich namens Cloud Native Computing und wird von der Cloud Native Computing Foundation unterstützt. Im Grund hilft Kubernetes dabei, Microservices zu organisieren, sie automatisch anzupassen und zu aktualisieren, ohne dass die Anwendung dabei ausfallen muss. Kubernetes kann folgendes Orchestrieren: Erstellen, Löschen, Neustart von Containern, Container-Startreihenfolge managen, Container-Neustart nach Absturz.
+
+## Was sind Microservices?
+
+Microservices sind eine moderne Art, Software-Anwendungen zu entwickeln und zu organisieren. Anstatt eine grosse Anwendung als ein monolithisches Ganzes zu erstellen, wird sie in kleinere, unabhängige Dienste oder "Microservices" aufgeteilt. Jeder Microservice erfüllt eine spezifische Funktion und kann eigenständig entwickelt, bereitgestellt und skaliert werden. Diese Unabhängigkeit ermöglicht eine flexiblere und schnellere Entwicklung, da Änderungen an einem Microservice keine Auswirkungen auf andere Teile der Anwendung haben. Microservices fördern auch eine bessere Skalierbarkeit, Wartbarkeit und fördern die kontinuierliche Bereitstellung von Software.
+
+## Vergleich lightweight K8s Anwendungen
+
+Alle diese Tools sind darauf ausgerichtet, Kubernetes in verschiedenen Umgebungen bereitzustellen und zu verwalten.
+
+### Einfachheit
+
+Minicube: Einfach zu installieren
+MicroK8s: Speziell für Ubuntu
+Docker for Windows: Einfach zu installieren und zu verwenden.
+K3s: Es ist leichtgewichtig und einfach zu installieren.
+
+### Ressourcenverbrauch
+
+Minicube: Verbraucht etwas mehr Ressourcen als andere Tools
+MicroK8s: Sehr ressourcenschonend
+Docker for Windows: Mittlerer Ressourcenverbrauch
+k3s: verbraucht minimal Ressourcen im Vergleich zu anderen Optionen.
+
+### Anwendung
+
+Minikube: Ideal für lokale Entwicklung und Tests, um Kubernetes-Cluster schnell zu starten.
+MicroK8s: Kann für verschiedene Anwendungsfälle verwendet werden
+Docker for Windows: Für Windows-Benutzer
+k3s: Für IoT, aber auch für lokale Entwicklungszwecke geeignet.
+
+## Kubernetes installation
+
+I. Docker Desktop öffnen, da wir es schon haben
+II. Auf den Käfer drücken, danach auf "Kubernetes" drücken
+III. "Enable Kubernetes" aktivieren, indem man aufs Häkchen drückt
+IV. Im Terminal dann `sudo snap install kubectl --classic`
+V. Dann folgende Befehle ausführen, um es mit der Docker Desktop Instanz zu verknüpfen.
+
+```bash
+kubectl config get-contexts
+kubectl config use-context docker-desktop
+```
+
+![Printscreen Lens auf server verbinden](./images/...)
+
+## Raft-Konsens-Algorithmus
+
+Es gibt mehrere Nodes. Die Nodes sind "Follower".
+Wenn einer dieser Nodes keinen "Leader" hat, meldet er sich zur Wahl.
+Jetzt können die Follower abstimmen und wählen einen Node.
+Wenn der Node gewählt wurde, übernimmt er die Verantwortung für die Koordination des Clusters. Er empfängt Anfragen von Clients, aktualisiert den gemeinsamen Zustand des Systems und koordiniert die Replikation von Daten über die Cluster-Nodes.
+
+Der Grund, warum man eine ungerade Anzahl Server haben sollte, ist wegen dem Abstimmungsprozess.
+Eine ungerade Anzahl führ dazu, dass es nicht zu einem Gleichstand kommt, da keine zwei Leader dieselbe Anzahl an Stimmen erhalten können.
+
+## App
