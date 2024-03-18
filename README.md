@@ -252,3 +252,10 @@ Es gibt Umgebungen: Bei Blue/Green Deployment gibt es zwei identische Produktion
 - Da die Benutzer während des Deployments weiterhin auf die eine Umgebung zugreifen können, gibt es keine Unterbrechung der Dienste. Dies minimiert das Risiko von Ausfallzeiten oder Beeinträchtigungen für die Benutzer.
 - Wenn es Probleme mit dem neuen Deployment gibt, kann das Rollback schnell durch Umschalten des Datenverkehrs auf die vorherige Umgebung erfolgen. Dadurch kann die Anwendung schnell wieder in einen stabilen Zustand versetzt werden.
 
+## Cluster IP & Node IP
+
+### Cluster IP 
+Der Cluster-IP wird intern im Kubernetes-Cluster verwendet, um die Kommunikation zwischen verschiedenen Ressourcen innerhalb des Clusters zu ermöglichen. Er ist nur innerhalb des Clusters erreichbar und kann nicht von ausserhalb des Clusters angesprochen werden. Der Cluster IP wird verwendet, um den internen Datenverkehr zwischen den verschiedenen Teilen einer Anwendung zu steuern, z. B. zwischen verschiedenen Microservices.
+
+### Node IP
+Node IP ermöglicht den Zugriff auf einen Kubernetes-Service von außerhalb des Clusters. Wenn ein Service als NodePort deklariert wird, wird er auf der IP-Adresse jedes einzelnen Nodes im Kubernetes-Cluster verfügbar gemacht. Man kann auf den Service von außerhalb des Clusters zugreifen, indem man die IP-Adresse eines bestimmten Nodes und den entsprechenden Port im Browser oder in Anfragen angibt. Dies kann in Produktionsumgebungen verwendet werden, hat aber einige Einschränkungen.
