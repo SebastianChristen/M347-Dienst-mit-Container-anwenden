@@ -194,9 +194,13 @@ k3s: Für IoT, aber auch für lokale Entwicklungszwecke geeignet.
 ## Kubernetes installation
 
 I. Docker Desktop öffnen, da wir es schon haben
+
 II. Auf den Käfer drücken, danach auf "Kubernetes" drücken
+
 III. "Enable Kubernetes" aktivieren, indem man aufs Häkchen drückt
+
 IV. Im Terminal dann `sudo snap install kubectl --classic`
+
 V. Dann folgende Befehle ausführen, um es mit der Docker Desktop Instanz zu verknüpfen.
 
 ```bash
@@ -204,7 +208,7 @@ kubectl config get-contexts
 kubectl config use-context docker-desktop
 ```
 
-![Printscreen Lens auf server verbinden](./images/...)
+![Printscreen Lens auf server verbinden](./kubernetes_bilder/kubernetes_1.png)
 
 ## Raft-Konsens-Algorithmus
 
@@ -217,3 +221,28 @@ Der Grund, warum man eine ungerade Anzahl Server haben sollte, ist wegen dem Abs
 Eine ungerade Anzahl führ dazu, dass es nicht zu einem Gleichstand kommt, da keine zwei Leader dieselbe Anzahl an Stimmen erhalten können.
 
 ## App
+
+Wir laden uns das Git-Repo runter.
+In diesem Repo hat es yaml-dateien, welche wir noch anpassen für unser image.
+Es werden zwei controller erstellt: Einen für redis-master und den anderen für redis-slave
+Die Pods sind im Namespace to-do-app.
+Danach starten wir die Services.
+Mit `kubectl -n to-do-app port-forward svc/todo-app-service 8080:80` kann dann die To-do-app gestartet werden.
+
+![to-do-app](./kubernetes_bilder/kubernetes_2.png)
+
+## Self Healing, Scale Down, Scale Up
+
+### Self-Healing
+Self-Healing bedeutet, dass Kubernetes automatisch neue Pods startet, wenn bestehende Pods ausfallen oder abstürzen. Auf diese Weise bleibt die Anwendung stabil und verfügbar, da sie sich selbst repariert, wenn etwas schief geht.
+
+### Scale Up
+Scale Up bedeutet, dass Kubernetes automatisch zusätzliche Pods startet, um mit steigender Nachfrage oder Last umzugehen. Dadurch kann die Anwendung mehr Arbeit gleichzeitig erledigen und flexibel auf Anforderungen reagieren.
+
+### Scale Down
+Scale Down bedeutet, dass Kubernetes automatisch überflüssige Pods entfernt, wenn die Nachfrage oder Last abnimmt. Dadurch werden Ressourcen freigegeben und Kosten gesenkt, während die Effizienz der Anwendung aufrechterhalten wird.
+
+## Rolling Update
+![screenshot](./kubernetes_bilder/kubernetes_3.png)
+
+## Blue Green Deployment
