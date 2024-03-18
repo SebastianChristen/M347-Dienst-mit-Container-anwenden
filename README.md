@@ -247,7 +247,8 @@ Scale Down bedeutet, dass Kubernetes automatisch überflüssige Pods entfernt, w
 
 ## Blue Green Deployment
 Es gibt Umgebungen: Bei Blue/Green Deployment gibt es zwei identische Produktionsumgebungen, die gleichzeitig laufen. Die eine Umgebung ist die aktive Produktionsumgebung, und die andere für Updates und Tests.
-Wenn es eine neue Version einer Anwendung gibt, wird sie in der anderen Umgebung zunächst bereitgestellt, danach wird langsam von der einten zur anderen gewechselt.
-Da die Benutzer während des Deployments weiterhin auf die eine Umgebung zugreifen können, gibt es keine Unterbrechung der Dienste. Dies minimiert das Risiko von Ausfallzeiten oder Beeinträchtigungen für die Benutzer.
-Wenn es Probleme mit dem neuen Deployment gibt, kann das Rollback schnell durch Umschalten des Datenverkehrs auf die vorherige Umgebung erfolgen. Dadurch kann die Anwendung schnell wieder in einen stabilen Zustand versetzt werden.
+
+- Wenn es eine neue Version einer Anwendung gibt, wird sie in der anderen Umgebung zunächst bereitgestellt, danach wird langsam von der einten zur anderen gewechselt.
+- Da die Benutzer während des Deployments weiterhin auf die eine Umgebung zugreifen können, gibt es keine Unterbrechung der Dienste. Dies minimiert das Risiko von Ausfallzeiten oder Beeinträchtigungen für die Benutzer.
+- Wenn es Probleme mit dem neuen Deployment gibt, kann das Rollback schnell durch Umschalten des Datenverkehrs auf die vorherige Umgebung erfolgen. Dadurch kann die Anwendung schnell wieder in einen stabilen Zustand versetzt werden.
 
