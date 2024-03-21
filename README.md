@@ -1,7 +1,7 @@
 # Portfolio "Dienst mit Container anwenden"
 
 Sebastian Christen, INF2022j
-2024/02/22, Version Gamma02
+2024/02/22, Version 3.1
 ![](https://oneclick-cloud.com/wp-content/uploads/2023/08/Bigstock_-139961875-Docker-Emblem.-A-Blue-Whale-With-Several-Containers.-e1574090673987-1.jpg)
 
 ## Was sind Container?
@@ -259,3 +259,12 @@ Der Cluster-IP wird intern im Kubernetes-Cluster verwendet, um die Kommunikation
 
 ### Node IP
 Node IP ermöglicht den Zugriff auf einen Kubernetes-Service von außerhalb des Clusters. Wenn ein Service als NodePort deklariert wird, wird er auf der IP-Adresse jedes einzelnen Nodes im Kubernetes-Cluster verfügbar gemacht. Man kann auf den Service von außerhalb des Clusters zugreifen, indem man die IP-Adresse eines bestimmten Nodes und den entsprechenden Port im Browser oder in Anfragen angibt. Dies kann in Produktionsumgebungen verwendet werden, hat aber einige Einschränkungen.
+
+## Auf App zugreiffen
+[screenshot]
+
+### Waum es mit my-app.com geht, aber mit localhost nicht
+Weil Ingress
+
+
+
