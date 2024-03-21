@@ -270,5 +270,7 @@ Weil Ingress
 [screenshot]
 
 ## Eigene Website auf K8s
+[yaml-datei]
+[commands]
 [screenshot]
 
