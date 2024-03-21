@@ -266,5 +266,9 @@ Node IP ermöglicht den Zugriff auf einen Kubernetes-Service von außerhalb des 
 ### Waum es mit my-app.com geht, aber mit localhost nicht
 Weil Ingress
 
+## Portainer auf Kubernetes 
+[screenshot]
 
+## Eigene Website auf K8s
+[screenshot]
 
