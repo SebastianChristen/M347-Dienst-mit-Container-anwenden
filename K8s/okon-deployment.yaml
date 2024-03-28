@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: okon-website-deployment
+  name: okon-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: okon-website
+      app: okon
   template:
     metadata:
       labels:
-        app: okon-website
+        app: okon
     spec:
       containers:
-      - name: okon-website
+      - name: okon
         image: git-registry.gibb.ch/sch140456/dockermodul/okon-website:v1
         ports:
         - containerPort: 80
-      # Specify the name for the pod
-      hostname: okon-pod-name
