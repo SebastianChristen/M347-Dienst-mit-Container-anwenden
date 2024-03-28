@@ -4,6 +4,9 @@ Sebastian Christen, INF2022j
 2024/03/28, Version 5.9
 ![](https://oneclick-cloud.com/wp-content/uploads/2023/08/Bigstock_-139961875-Docker-Emblem.-A-Blue-Whale-With-Several-Containers.-e1574090673987-1.jpg)
 
+<details>
+<summary>Docker</summary>
+
 ## Was sind Container?
 
 Ein Container kann man sich am besten so vorstellen, dass er wie eine vereinfachte VM (virtuelle Maschine) ist, welche einen vom Benutzer bestimmten Prozess laufen lässt. Der Container ist dazu da, ein Docker-Image laufen zu lassen, und während der Laufzeit des Containers dieses Image verwendet. Ein Docker-Image, ähnlich wie ein VM-Abbild (Image), beinhaltet gewisse Applikationen, Skripte, etc., welche für den Prozess, den man auf Docker ausführen möchte, benötigt werden. Container eignen sich unter anderem für skalierbare Webapplikationen, welche je nach Auslastung mehr oder weniger Ressourcen benötigen.
@@ -156,6 +159,11 @@ Danach sollten Sie auf Docker Desktop folgendes sehen. Sie können nun auf den L
 
 ![](./images/okon-on-docker.png)
 
+</details>
+
+<details open>
+<summary>Kubernetes</summary>
+
 # Kubernetes
 
 ## Was ist Kubernetes?
@@ -265,7 +273,7 @@ Der Cluster-IP wird intern im Kubernetes-Cluster verwendet, um die Kommunikation
 
 ### Node IP
 
-Node IP ermöglicht den Zugriff auf einen Kubernetes-Service von außerhalb des Clusters. Wenn ein Service als NodePort deklariert wird, wird er auf der IP-Adresse jedes einzelnen Nodes im Kubernetes-Cluster verfügbar gemacht. Man kann auf den Service von außerhalb des Clusters zugreifen, indem man die IP-Adresse eines bestimmten Nodes und den entsprechenden Port im Browser oder in Anfragen angibt. Dies kann in Produktionsumgebungen verwendet werden, hat aber einige Einschränkungen.
+Node IP ermöglicht den Zugriff auf einen Kubernetes-Service von ausserhalb des Clusters. Wenn ein Service als NodePort deklariert wird, wird er auf der IP-Adresse jedes einzelnen Nodes im Kubernetes-Cluster verfügbar gemacht. Man kann auf den Service von ausserhalb des Clusters zugreifen, indem man die IP-Adresse eines bestimmten Nodes und den entsprechenden Port im Browser oder in Anfragen angibt. Dies kann in Produktionsumgebungen verwendet werden, hat aber einige Einschränkungen.
 
 ## Auf App zugreifen
 
@@ -349,3 +357,5 @@ kubectl apply -f okon-service.yaml
 Danach konnte ich meine Website über `localhost:30020` erreichen.
 
 ![screenshot](./kubernetes_bilder/okon-k8s.png)
+
+</details>
