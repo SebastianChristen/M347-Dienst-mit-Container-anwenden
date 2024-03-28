@@ -1,7 +1,7 @@
 # Portfolio "Dienst mit Container anwenden"
 
 Sebastian Christen, INF2022j
-2024/02/22, Version 3.1
+2024/03/28, Version 5.9
 ![](https://oneclick-cloud.com/wp-content/uploads/2023/08/Bigstock_-139961875-Docker-Emblem.-A-Blue-Whale-With-Several-Containers.-e1574090673987-1.jpg)
 
 ## Was sind Container?
@@ -347,3 +347,5 @@ kubectl apply -f okon-service.yaml
 ```
 
 Danach konnte ich meine Website über `localhost:30020` erreichen.
+
+![screenshot](./kubernetes_bilder/okon-k8s.png)
