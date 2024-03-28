@@ -275,6 +275,13 @@ Der Cluster-IP wird intern im Kubernetes-Cluster verwendet, um die Kommunikation
 
 Node IP ermöglicht den Zugriff auf einen Kubernetes-Service von ausserhalb des Clusters. Wenn ein Service als NodePort deklariert wird, wird er auf der IP-Adresse jedes einzelnen Nodes im Kubernetes-Cluster verfügbar gemacht. Man kann auf den Service von ausserhalb des Clusters zugreifen, indem man die IP-Adresse eines bestimmten Nodes und den entsprechenden Port im Browser oder in Anfragen angibt. Dies kann in Produktionsumgebungen verwendet werden, hat aber einige Einschränkungen.
 
+## Eintrag zu Loadbalancer
+
+Der Loadbalancer sorgt dafür, dass die Anfragen an mehrere Pods verteilt werden.
+Das hilft dabei, dass Webseiten oder Apps reibungslos laufen, indem er den Datenverkehr aufteilt.
+So wird verhindert, dass ein einzelner Pod zu viel Arbeit bekommt und dadurch langsamer wird oder ausfällt.
+Wenn es zu einem Ausfall kommt, leitet der Loadbalancer den Datenverkehr weiter an einen Pod, welcher funktioniert.
+
 ## Auf App zugreifen
 
 ![screenshot](./kubernetes_bilder/my-app.com.png)
